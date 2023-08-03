@@ -112,8 +112,9 @@ function install_applications(){
 	sudo snap install vlc
 
 	#Install Balena Etcher
-	echo -e "Installing Balena Etcher...\n"
-	sudo pacman -S etcher || { echo -e "Failed to Install Balena Etcher\n";}
+	echo -e "The command to install Balena Etcher is incorrect\n This will require a revision\n"
+	#echo -e "Installing Balena Etcher...\n"
+	#sudo pacman -S etcher || { echo -e "Failed to Install Balena Etcher\n";}
 
 	#Install Virtual Box
 	echo -e "Installing Virtual Box... but you should try VirtManager...\n"
@@ -123,6 +124,9 @@ function install_applications(){
 	echo -e "Installing Obsidian...\n"
 	sudo snap install obsidian --classic
 
+	#Install Brackets
+	echo -e "Installing Brackets...\n"
+	sudo snap install brackets --classic
 }
 
 #This function is the primary execution of the script
